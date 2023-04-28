@@ -1,0 +1,198 @@
+@import "./burger.css";
+@import "./projects.css";
+@import "./skills.css";
+@import "./services.css";
+@import "./contacts.css";
+@import "./footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace; "Manrope", sans-serif;
+  min-width: 360px;
+  background: #000000;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+div {
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: 55px;
+  line-height: 72px;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.header {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background-image: url("../resourses/computer-screens-running-programming-code-in-empty-software-developing-agency-office-and-computers-parsing-data-algorithms-in-background-neural-network-servers-cloud-computing-in-data-room\(1\)\(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.header__wrapper {
+  padding-top: 24px;
+  padding-bottom: 30px;
+  height: 765px;
+}
+
+.header__menu {
+  margin-bottom: 247px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/*.logo {
+  width: 113px;
+  height: 39px;
+}*/
+
+.logo {
+  width: 150px;
+  height: 39px;
+  margin: 8px 0;
+  background: #000000;
+
+  border-radius: 100px;
+  border: 2px solid #1bff07;
+  text-decoration: none;
+}
+
+.logo-name {
+  margin-top: 7px;
+  margin-left: 9px;
+  font-size: 36px;
+  margin-bottom: 7px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1bff07;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 23px;
+  text-shadow: 1px 0 1px black, 0 1px 1px black, -1px 0 1px black,
+    0 -1px 1px black;
+}
+
+.header-description {
+  margin-bottom: 29px;
+  width: 430px;
+  font-size: 25px;
+  line-height: 26px;
+  text-shadow: 1px 0 1px black, 0 1px 1px black, -1px 0 1px black,
+    0 -1px 1px black;
+}
+
+.header-title {
+  color: #1bff07;
+  font-size: 80px;
+  line-height: 70px;
+  text-shadow: 1px 0 1px black, 0 1px 1px green, -1px 0 1px green,
+    0 -1px 1px green;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+
+  .header {
+    /*background-image: url(../resourses/header-image-tablet.jpg);*/
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .header__menu {
+    margin-bottom: 290px;
+  }
+
+  .header-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .header-description {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 45px;
+    line-height: 58px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 13px 0 13px;
+  }
+
+  .header {
+    /*background-image: url(../resourses/header-image-mobile.jpg);*/
+  }
+
+  .header__wrapper {
+    height: 716px;
+  }
+
+  .header__menu {
+    margin-bottom: 210px;
+  }
+
+  .header-description {
+    width: 310px;
+    margin-bottom: 90px;
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  .header-title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
