@@ -1,0 +1,148 @@
+.skills {
+  margin-bottom: 130px;
+}
+
+.skills__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 90px;
+}
+
+.skills__title {
+  margin-bottom: 140px;
+}
+
+.skill {
+  width: calc(50% - 15px);
+}
+
+.skill__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-title {
+  position: relative;
+  color: #1bff07;
+  margin-bottom: 15px;
+}
+
+.skill-title::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 44px;
+  width: 45px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60%;
+  border-radius: 10px;
+  bottom: calc(100% + 20px);
+  background-color: #1bff07;
+}
+
+.skill-title_html::before {
+  background-image: url("../resourses/skills/html-icon.png");
+}
+
+.skill-title_JavaScript::before {
+  background-image: url("../resourses/skills/JavaScript-icon.png");
+}
+
+.skill-title_react::before {
+  background-image: url("../resourses/skills/react-icon.png");
+}
+
+.skill-title_phone::before {
+  background-image: url("../resourses/skills/phone-icon.png");
+}
+
+.skill .skill-title_react {
+  height: 138px;
+}
+
+.skill-text {
+  font-size: 22px;
+  line-height: 29px;
+  text-align: justify;
+}
+
+@media (max-width: 1199px) {
+  .skills {
+    margin-bottom: 105px;
+  }
+
+  .skills__title {
+    margin-bottom: 110px;
+  }
+
+  .skills__wrapper {
+    row-gap: 80px;
+  }
+
+  .skill-title {
+    margin-bottom: 13px;
+  }
+
+  .skill-title::before {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill-title_html::before {
+    background-image: url("../resourses/skills/html-icon-tablet.png");
+  }
+
+  .skill-title_JavaScript::before {
+    background-image: url("../resourses/skills/JavaScript-icon-tablet.png");
+  }
+
+  .skill-title_react::before {
+    background-image: url("../resourses/skills/react-icon-tablet.png");
+  }
+
+  .skill-title_phone::before {
+    background-image: url("../resourses/skills/phone-icon-tablet.png");
+  }
+
+  .skill-text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .skill .skill-title_react {
+    height: 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    margin-bottom: 75px;
+  }
+
+  .skills__wrapper {
+    flex-direction: column;
+  }
+
+  .skills__title {
+    margin-bottom: 138px;
+  }
+
+  .skill__wrapper {
+    gap: 25px;
+  }
+
+  .skill-title {
+    margin-bottom: 15px;
+  }
+
+  .skill .skill-title_react {
+    height: auto;
+  }
+
+  .skill {
+    width: 100%;
+  }
+}
