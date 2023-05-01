@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  font-family: "IBM Plex Mono", monospace "Manrope", sans-serif;
+  font-family: "Poiret One", cursive;
+  /* font-family: "IBM Plex Mono", monospace "Manrope", sans-serif; */
   min-width: 360px;
   background: #000000;
 }
